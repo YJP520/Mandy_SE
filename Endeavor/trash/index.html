@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mandy Search</title>
+    <!--通过link对css文件进行连接，rel和type是固定写法-->
+<!--    <link rel="stylesheet" type="text/css" href="F:\Projects\Python Pycharm\Mandy_SE\styles" />-->
+    <style type="text/css">
+        * {
+            box-sizing: border-box;  /*宽度和高度会包括内边距和边框*/
+        }
+
+        body {
+            /* 背景渐变色 */
+            background: -webkit-linear-gradient(to right, #00EE00, #00E5EE);
+            background: linear-gradient(to right, #00EE00, #00E5EE);
+        }
+
+        div.search {
+            padding: 15rem 0;
+        }
+
+        form {
+            position: relative;
+            width: 600px;  /* 搜索框长度 */
+            margin: 0 auto;  /*设置宽度后，居中*/
+        }
+
+        input,button {
+            border: none;   /*无边框样式；元素的总宽度和高度包括边框的宽度 */
+            outline: none;  /*无轮廓样式；轮廓是在元素周围绘制的一条线，在边框之外并且可能与其他内容重叠，以凸显元素，元素的总宽度和高度不受轮廓线宽度的影响。*/
+        }
+
+        .search input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+            border: 2px solid #c5464a;
+            border-radius: 19px;   /*border-radius 属性用于向元素添加圆角边框：*/
+            background: transparent;  /*背景透明*/
+            font-size: 18px;  /*插入内容的字体大小*/
+        }
+
+        .search button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;  /*cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状*/
+            position: absolute;
+            background: #EE6A50;
+            border-radius: 0 19px 19px 0;
+            width: 60px;
+            right: 0;
+        }
+        .search button:hover {
+            background-color: #CD3700;  /*点击搜索按钮时的背景颜色*/
+        }
+
+        /* 在<button>元素后面插入内容，并设置所插入内容的样式： */
+        .search button:before {
+            content: "GO";  /*插入的内容*/
+            font-size: 18px;  /*插入内容的字体大小*/
+            color: #F9F0DA;  /*插入内容的字体颜色*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="search">
+        <form action="" method="post">
+            <input placeholder="请输入..." name="keyword" type="text">
+            <button type="submit"></button>
+        </form>
+    </div>
+
+</body>
+<!--<body>-->
+
+<!--&lt;!&ndash;    <form action="/s" method="get">&ndash;&gt;-->
+<!--&lt;!&ndash;        搜索: <input type="text" name="wd"><br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="submit" value="搜索">&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;     <div class="search" >&ndash;&gt;-->
+<!--&lt;!&ndash;         <input type="text" placeholder="请输入..." name="" id="" value="" />&ndash;&gt;-->
+<!--&lt;!&ndash;         <button><i>搜索</i></button>&ndash;&gt;-->
+<!--&lt;!&ndash;     </div>&ndash;&gt;-->
+
+<!--    <div class="container">-->
+<!--        <input type="text" placeholder="Search...">-->
+<!--        <div class="search"></div>-->
+<!--    </div>-->
+
+</body>
+</html>

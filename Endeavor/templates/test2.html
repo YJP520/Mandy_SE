@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 32px;
+            background-color: aqua;
+        }
+
+        div:nth-of-type(1) {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(to right, red 20%, yellow 40% 60%, pink 80%);
+        }
+
+        div:nth-of-type(2) {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, red 20%, yellow 40% 60%, pink 80%);
+        }
+
+        div:nth-of-type(3) {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(to right, red 50%, pink 50%);
+        }
+
+        div:nth-of-type(4) {
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+        }
+
+        div:nth-of-type(5) {
+            width: 600px;
+            height: 300px;
+            background: radial-gradient(ellipse at center center, red, green, blue);
+        }
+
+        div:nth-of-type(6) {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle at 0px 0px, red, green, blue);
+        }
+
+        div:nth-of-type(7) {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(100px 100px at 50px 100px, red, green, blue);
+        }
+
+        div:nth-of-type(8) {
+            width: 600px;
+            height: 300px;
+            background: repeating-linear-gradient(to right, red, green 30px 60px, blue 90px 120px);
+        }
+
+        div:nth-of-type(9) {
+            width: 600px;
+            height: 600px;
+            background: repeating-radial-gradient(circle, red, green 30px 60px, blue 90px 120px);
+        }
+
+        div:nth-of-type(10) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            display: inline-block;
+        }
+
+        div:nth-of-type(11) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: blur(5px);
+            display: inline-block;
+        }
+
+        div:nth-of-type(12) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: brightness(.5);
+            display: inline-block;
+        }
+
+        div:nth-of-type(13) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: brightness(1);
+            display: inline-block;
+        }
+
+        div:nth-of-type(14) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: brightness(2);
+            display: inline-block;
+        }
+
+        div:nth-of-type(15) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: contrast(.5);
+            display: inline-block;
+        }
+
+        div:nth-of-type(16) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: contrast(1);
+            display: inline-block;
+        }
+
+        div:nth-of-type(17) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: contrast(2);
+            display: inline-block;
+        }
+
+        div:nth-of-type(18) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: saturate(.5);
+            display: inline-block;
+        }
+
+        div:nth-of-type(19) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: saturate(1);
+            display: inline-block;
+        }
+
+        div:nth-of-type(20) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: saturate(2);
+            display: inline-block;
+        }
+
+        div:nth-of-type(21) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: invert(0);
+            display: inline-block;
+        }
+
+        div:nth-of-type(22) {
+            width: 640px;
+            height: 360px;
+            background-size: 640px 360px;
+            background-image: url(https://img.zcool.cn/community/01936a58be7362a801219c77fe8358.jpg@1280w_1l_2o_100sh.jpg);
+            filter: invert(1);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <p>线性渐变</p>
+    <div>
+        用方向定义渐变
+    </div>
+    <div>
+        用角度定义渐变
+    </div>
+    <div>
+        相邻的两个渐变标识位一样，无渐变效果
+    </div>
+    <div>
+        渐变图片背景
+    </div>
+    <p>径向渐变</p>
+    <div>
+        中心椭圆渐变(默认)
+    </div>
+    <div>
+        左上角圆形渐变
+    </div>
+    <div>
+        自定义渐变尺寸中心圆形渐变
+    </div>
+    <p>重复渐变</p>
+    <div>
+        重复的线性渐变
+    </div>
+    <div>
+        重复的径向渐变
+    </div>
+    <p>模糊滤镜</p>
+    <div></div>
+    <div></div>
+    <p>亮度</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p>对比度</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p>饱和度</p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <p>反转图</p>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
